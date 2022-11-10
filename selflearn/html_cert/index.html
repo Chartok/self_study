@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<htm lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="survey-form" content="survey for freeCodeCamp cert project">
+        <link target="_self" rel="stylesheet" href="styles.css">
+    </head>
+ 
+<body>
+
+    <h1 id="title">freeCodeCamp Survey</h1>
+
+        <p id="description">    </p>
+
+<form action="https://survey-form.freecodecamp.rocks" method="post" id="survey-form">
+
+    <fieldset> 
+        <label for="user-name" id="name-label"><input type="text" name="User Name" id="name" placeholder="User Name" required />User Name:</label>
+        <label for="email" id="email-label"><input type="email" name="email" id="email" required placeholder="email123@email.com">Email:</label>
+
+        <label for="how-long-you've-been-coding/programming" name="xp level">How long have you been coding/programming?</label>
+
+            <select id="dropdown" name="xp lvl groups">
+                <optgroup>
+                    <option>None</option>
+                </optgroup>
+                <optgroup label="Newbie">
+                    <option>Less than 1 month</option>
+                    <option>2-3 months</option>
+                    <option>8-11 months</option>
+                </optgroup>
+                <optgroup label="Intermediate">
+                    <option>2-10 years<option>
+                </optgroup>
+             </select>
+
+            // question: how long have you been using freeCodeCamp? input type number max 10 years min 1 day
+
+            // question: which language was your favorite to work through? input type checkboxes () list langs: HTML, CSS, JavaScript, C/C++, Python, none of the above powershell/bash reins supreme
+
+            // question: how difficult is learning (list 3 languages); 3 inputs type radio, range of difficulty 1=too easy, 2=challenging, 3=too difficult
+
+            // question: how satisfied are you with your learning experience? input type checkboxes (x6); Rating scale: 1 Very unsatisfied, 2 unsatisfied, 3 somewhat unsatisfied, 4 some what satisfied, 5 satisfied, 6 very satisfied
+
+              // question: how likely are you to share you experience with friends and family? imput type checkboxes (5); Rating scale: 1 not at all, 2 probably not, 3 maybe, 4 probably, 5 definitely
+
+              // add: input textarea for: additional comments/feedback
+
+              // MVP
+
+    </fieldset>
+
+    <div>
+        <ol>
+        </ol>
+    </div>
+    <br>
+    <hr>
+    <div>
+         <fieldset>
+        </fieldset>    
+    </div>
+</form>
+
+</body>
+
+</html>

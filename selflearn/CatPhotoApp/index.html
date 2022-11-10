@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Asad">
+        <meta name="description" content="This web page is one of the projects I'm working on while learning HTML and other languages.">
+        <title>CatPhotoApp</title>
+        <link rel="icon" href="pcgamericon.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body>
+        <hr>
+        <h1>CatPhotoApp</h1>
+        <hr>
+        <main>
+            <section>
+                <h2>Cat Photos</h2>
+                <p>Click here to view more <a target="_blank" href="https://freecatphotoapp">cat photos</a>.</p>
+                <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+            </section>
+            <section>
+                <h2>Cat Lists</h2>
+                <h3>Things cats love:</h3>
+                <ul>
+                    <li>cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasagna</li>
+                </ul>
+                <figure>
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+                    <figcaption>Cats <em>love</em> lasagna.</figcaption>
+                </figure>
+                <h3>Top 3 things cats hate:</h3>
+                <ol>
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+                <figure>
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+                    <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+                </figure>
+            </section>
+            <section>
+                <h2>Cat Form</h2>
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+                  <fieldset>
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+                    <label><input checked id="indoor" name="indoor-outdoor" value="indoor" type="radio"> Indoor</label>
+                    <label><input id="outdoor" name="indoor-outdoor" value="outdoor" type="radio"> Outdoor</label>
+                  </fieldset>
+                  <fieldset>
+                    <legend>What's your cat's personality?</legend>
+                    <input checked value="loving" id="loving" name="personality" type="checkbox"><label for="loving">Loving</label>
+                    <input value="lazy" type="checkbox" name="personality" id="lazy"><label for="lazy">Lazy</label>
+                    <input value="energetic" type="checkbox" name="personality" id="energetic"><label for="energetic">Energetic</label>
+                  </fieldset> 
+                <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                <button type="submit">Submit</button>
+                </form>
+            </section>
+            <section>
+                <div>
+                        <p>There have been recent breaththroughs into cat behavior and psychology have revealed that cats have been companions to humans almost as long as dogs.</p>
+                        <p>Cats and humans have formed a symbiotic relationship where they can co-exist and benefit from each other.</p>
+                        <p>Humans have employed cats on ships and in plantations and almost anywhere where rats would infest the storage and spread diseases and devour any stored food, such as rice and grains.</p>
+                        <h2>Interesting Cat Facts</h2>
+                        <ul>
+                            <li>Cats are hyper-curious</li>
+                            <li>Cats can fit through opening that are many times smaller than the volume of their body, due to the flexible nature of their spine</li>
+                            <li></li>
+                        </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>No  Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+        </footer>
+    </body>
+</html>
