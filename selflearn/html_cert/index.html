@@ -1,70 +1,95 @@
 <!DOCTYPE html>
 
-<htm lang="en">
+<html lang="en">
 
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <meta name="survey-form" content="survey for freeCodeCamp cert project">
-        <link target="_self" rel="stylesheet" href="styles.css">
+        <title>Survey</title>
+        <meta name="survey-form" content="survey for free coding camp website cert project">
+        <link rel="stylesheet" href="styles.css">
     </head>
  
 <body>
 
-    <h1 id="title">freeCodeCamp Survey</h1>
+<header>
+    <h1 id="title">Learn Coding Survey</h1>
 
-        <p id="description">    </p>
+    <p id="description">Thanks for taking the time to visit! <br>Please fill out this short survey to help us improve!</p>
+</header>
 
-<form action="https://survey-form.freecodecamp.rocks" method="post" id="survey-form">
+<form action="" method="post" id="survey-form">
+<hr>
+    <label for="name" name="survey-form" id="name-label">User Name
+        <input type="text" name="survey-form" id="name" value="" placeholder="paperClipHands42" required>
+    </label>
+  
+    <label for="number" id="number-label" name="survey-form" >Age (optional)
+        <input type="number" name="survey-form" id="number" min="18" max="100" placeholder="18">
+    </label>
 
-    <fieldset> 
-        <label for="user-name" id="name-label"><input type="text" name="User Name" id="name" placeholder="User Name" required />User Name:</label>
-        <label for="email" id="email-label"><input type="email" name="email" id="email" required placeholder="email123@email.com">Email:</label>
-
-        <label for="how-long-you've-been-coding/programming" name="xp level">How long have you been coding/programming?</label>
-
-            <select id="dropdown" name="xp lvl groups">
-                <optgroup>
-                    <option>None</option>
-                </optgroup>
-                <optgroup label="Newbie">
-                    <option>Less than 1 month</option>
-                    <option>2-3 months</option>
-                    <option>8-11 months</option>
-                </optgroup>
-                <optgroup label="Intermediate">
-                    <option>2-10 years<option>
-                </optgroup>
-             </select>
-
-            // question: how long have you been using freeCodeCamp? input type number max 10 years min 1 day
-
-            // question: which language was your favorite to work through? input type checkboxes () list langs: HTML, CSS, JavaScript, C/C++, Python, none of the above powershell/bash reins supreme
-
-            // question: how difficult is learning (list 3 languages); 3 inputs type radio, range of difficulty 1=too easy, 2=challenging, 3=too difficult
-
-            // question: how satisfied are you with your learning experience? input type checkboxes (x6); Rating scale: 1 Very unsatisfied, 2 unsatisfied, 3 somewhat unsatisfied, 4 some what satisfied, 5 satisfied, 6 very satisfied
-
-              // question: how likely are you to share you experience with friends and family? imput type checkboxes (5); Rating scale: 1 not at all, 2 probably not, 3 maybe, 4 probably, 5 definitely
-
-              // add: input textarea for: additional comments/feedback
-
-              // MVP
-
-    </fieldset>
-
-    <div>
-        <ol>
-        </ol>
-    </div>
-    <br>
-    <hr>
-    <div>
-         <fieldset>
-        </fieldset>    
-    </div>
+    <label for="email" name="survey-form" id="email-label">Email
+        <input type="email" name="survey-form" id="email" value="" placeholder="paperClip@hands.com" required>
+    </label>
+<hr>
+    <label>How helpful do you think free coding camp websites are to teach people with no experience?
+        <label for="not-helpful" name="survey-form" id="not-helpful">
+            <input type="radio" name="survey-form" id="not-helpful" value="not-helpful" class="inline">Not Helpful</label>
+        <label for="probably-helpful" name="survey-form" id="probably-helpful">
+            <input type="radio" name="survey-form" id="probably-helpful" value="probably-helpful" class="inline">Probably Helpful</label>
+        <label for="very-helpful" name="survey-form" id="very-helpful">
+            <input type="radio" name="survey-form" id="very-helpful" value="very-helpful" class="inline">Very Helpful</label>
+    </label>
+<hr>
+    <label>How likely are you to recommend free coding camp websites to others?
+        <label for="not-likely" name="survey-form" id="not-likely">
+            <input type="radio" name="survey-form" id="not-likely" class="inline"value="not-likely">Not Likely</label>
+        <label for="maybe" name="survey-form" id="maybe">
+            <input type="radio" name="survey-form" id="maybe" class="inline" value="maybe">Maybe</label>
+        <label for="definitely" name="survey-form" id="definitely">
+            <input type="radio" name="survey-form" id="definitely" class="inline" value="definitely">Definitely</label>
+    </label>
+<hr>
+    <label>Which programming languages were fun to learn? (check all that apply)
+        <label for="html_css" name="survey-form" id="html_css">
+            <input type="checkbox" name="survey-form" id="html_css" class="inline" value="html_css">HTML/CSS</label>
+        <label for="javascript" name="survey-form" id="javascript">
+            <input type="checkbox" name="survey-form" id="javascript" class="inline" value="javascript">JavaScript</label>
+        <label for="java" name="survey-form" id="java">
+            <input type="checkbox" name="survey-form" id="java" class="inline" value="java">Java</label>
+        <label for="python" name="survey-form" id="python">
+            <input type="checkbox" name="survey-form" id="python" class="inline" value="python">Python</label>
+        <label for="c_c++_c#" name="survey-form" id="c_c++_c#">
+            <input type="checkbox" name="survey-form" id="c_c++_c#" class="inline" value="c_c++_c#">C/C++/C#</label>
+        <label for="still_lost_in_CLI" name="survey-form">
+            <input type="checkbox" name="survey-form" class="inline" value="still_lost_in_CLI">I still can't find my way out of the CLI</label>
+    </label>
+<hr>
+    <label for ="rate-difficulty" name="survey-form" id="rate-difficulty">How would you rate the difficulty of the curriculum?
+        <select id="dropdown" name="survey-form">
+            <option disabled value="">(select one)</option>
+            <option name="survey-form" id="rate-difficulty" value="too-easy">Too Easy</option>
+            <option name="survey-form" id="rate-difficulty" value="just-right">Just Right</option>
+            <option name="survey-form" id="rate-difficulty" value="too-difficult">Too Difficult</option>
+        </select>
+    </label>
+<hr>
+    <label for ="rate-overall-xp" name="survey-form" id="rate-overall-xp">How would you rate your overall experience with this website?
+        <select name="survey-form" id="dropdown">
+            <option disabled name="survey-form" id="rate-overall-xp" value="select">(select one)</option>
+            <option name="survey-form" id="rate-overall-xp" value="very-unsatisfied">Very Unsatisfied</option>
+            <option name="survey-form" id="rate-overall-xp" value="unsatisfied">Unsatisfied</option>
+            <option name="survey-form" id="rate-overall-xp" value="neither">Neither</option>
+            <option name="survey-form" id="rate-overall-xp" value="satisfied">Satisfied</option>
+            <option name="survey-form" id="rate-overall-xp" value="very-satisfied">Very Satisfied</option>	
+        </select>
+    </label>
+<hr>
+    <label for="additional-comments" name="survey-form" id="additional-comments">If you have any additional comments or feedback, please fill out the area below..
+        <textarea name="survey-form" id="additional-comments" cols="25" rows="10" placeholder="Type your comments here..."></textarea>
+    </label>
+<hr>
+    <input type="submit" name="survey-form" value="Submit" id="submit">
 </form>
-
 </body>
-
 </html>
